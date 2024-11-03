@@ -1,0 +1,10 @@
+version: '3'
+services:
+  bot:
+    build: .
+    container_name: gpt-bot
+    restart: always
+    volumes:
+      - .:/app
+    env_file:
+      - .env
